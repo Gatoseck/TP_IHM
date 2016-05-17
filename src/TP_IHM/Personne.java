@@ -35,8 +35,9 @@ public class Personne {
      * @param numero 
      */
     private void setNumPers (){
-        this.numPers=dernierNumero;
         dernierNumero++;
+        this.numPers=dernierNumero;
+        
     }
     /**
      * Prend la valeur de DernierNum

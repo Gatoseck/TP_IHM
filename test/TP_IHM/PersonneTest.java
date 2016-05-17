@@ -36,10 +36,13 @@ import org.junit.Ignore;
         /**
          * Test of getNumero method, of class Personne.
          */
-        @Ignore("Ce test est ignoré")
+        
         @Test
         public void testGetNumero() {
-            fail("Test à implémenter plus tard");    
+            Personne alan = new Personne("Turing", "Alan", 1912);
+            Personne pierre = new Personne("Retine", "Pierre", 1912);
+            assertEquals(alan.getDernierNum(),pierre.getNumero());
+            
         }
      
         /**
@@ -72,10 +75,14 @@ import org.junit.Ignore;
         /**
          * Test of getDernierNum method, of class Personne.
          */
-        @Ignore("Ce test est ignoré")
+        
         @Test
         public void testGetDernierNum() {
-            fail("Test à implémenter plus tard");
+            
+            Personne alan = new Personne("Turing", "Alan", 1912);
+            Personne pierre = new Personne("Retine", "Pierre", 1912);
+            assertEquals(alan.getDernierNum(),pierre.getNumero());
+            
         }
      
         /**
