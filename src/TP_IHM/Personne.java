@@ -23,90 +23,86 @@ public class Personne {
          * @param anneeNaissance : annee de naissance de la personne
          */
         
-public Personne(String nom, String prenom, int anneeNaissance){
-    this.nomPers=nom;
-    this.prenomPers=prenom;
-    this.anNaissance=anneeNaissance;
-}
+    public Personne(String nom, String prenom, int anneeNaissance){
+        this.nomPers=nom;
+        this.prenomPers=prenom;
+        this.anNaissance=anneeNaissance;
+        this.setNumPers();
+    }
 
-/**
- * Modifie valeur numero dans Personne
- * @param numero 
- */
-public void setNumPers (int numero){
-    this.numPers=numero;
-}
-/**
- * Prend la valeur de DernierNum
- * @return 
- */
-public int getDernierNum(){
-    
-    return this.dernierNumero;
-}
-/**
- * Prend la valeur de numero
- * @return 
- */
-public int getNumero(){
-    
-    return this.numPers;
-}
-/**
- * Prend la valeur de nom
- * @return 
- */
-public String getNom(){
-  
-        return this.nomPers;
-}
-/**
- * Prend la valeur deprenom
- * @return 
- */
-public String getPrenom(){
-    
+    /**
+     * Modifie valeur numero dans Personne
+     * @param numero 
+     */
+    private void setNumPers (){
+        this.numPers=dernierNumero;
+        dernierNumero++;
+    }
+    /**
+     * Prend la valeur de DernierNum
+     * @return 
+     */
+    public int getDernierNum(){
+        return this.dernierNumero;
+    }
+    /**
+     * Prend la valeur de numero
+     * @return 
+     */
+    public int getNumero(){
+        return this.numPers;
+    }
+    /**
+     * Prend la valeur de nom
+     * @return 
+     */
+    public String getNom(){
+            return this.nomPers;
+    }
+    /**
+     * Prend la valeur deprenom
+     * @return 
+     */
+    public String getPrenom(){
         return this.prenomPers;
-}
-/**
- * Prend la valeur de anNaissance
- * @return 
- */
-public int getAnNaissance(){
-    
+    }
+    /**
+     * Prend la valeur de anNaissance
+     * @return 
+     */
+    public int getAnNaissance(){
         return this.anNaissance;
-}
-/**
- * Modifie la valeur de no
- * @param nom
- * @return 
- */
-public void setNomPers(String nom){
-    this.nomPers=nom;
-}
-/**
- * Modifie la valeur de prenom
- * @param prenom
- * @return 
- */
-public void setPrenomPers(String prenom){
-    this.prenomPers=prenom;
-}
-/**
- * 
- * @param anNaissance
- * @return 
- */
-public void setAnNaissance(int annee){
-    this.anNaissance=annee;
-}
-/**
- * Affiche les parametre entré dans l'objet
- * @return 
- */
-public String toString(){
-    
+    }
+    /**
+     * Modifie la valeur de no
+     * @param nom
+     * @return 
+     */
+    public void setNomPers(String nom){
+        this.nomPers=nom;
+    }
+    /**
+     * Modifie la valeur de prenom
+     * @param prenom
+     * @return 
+     */
+    public void setPrenomPers(String prenom){
+        this.prenomPers=prenom;
+    }
+    /**
+     * 
+     * @param anNaissance
+     * @return 
+     */
+    public void setAnNaissance(int annee){
+        this.anNaissance=annee;
+    }
+    /**
+     * Affiche les parametre entré dans l'objet
+     * @return 
+     */
+    public String toString(){
         return this.nomPers + ", " + this.prenomPers + ", " + this.anNaissance;
-}
+    }
 
 }
